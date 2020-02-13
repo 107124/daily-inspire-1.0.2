@@ -25,12 +25,12 @@ class App extends React.Component {
   // }
 
   handleClick = () => {
+    this.shuffleQuotes(quotes);
     const generateRandomQuote = this.randomQuote();
     this.setState({
       quote: generateRandomQuote.quote,
       author: generateRandomQuote.author
     });
-    this.shuffleQuotes(quotes);
     // this.changeImage("nature");
   };
 

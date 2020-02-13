@@ -1,9 +1,10 @@
 body {
   margin: 0;
   background-color: rgb(141, 195, 226);
+  background: radial-gradient(circle, black, white);
   background-image: url("https://source.unsplash.com/random"),
     url("https://source.unsplash.com/random");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 html {
