@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background-color: rgb(141, 195, 226);
+  background-image: url("https://source.unsplash.com/random"),
+    url("https://source.unsplash.com/random");
+  background-repeat: no-repeat;
+}
+
+html {
+  transition: background-color 1s;
+}
+
+#root {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.733);
+  color: rgb(248, 47, 81);
+  font-style: italic;
+  font-weight: 50;
+  font-size: 2em;
+  padding: 42px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.quotebox {
+  background-color: rgba(224, 224, 224, 0.295) !important;
+  margin: 42px;
+  height: auto;
+  width: 100%;
+  border: 2px rgba(255, 255, 255, 0.966) solid;
+  border-radius: 10px;
+  text-align: right;
+  max-width: 35rem;
+}
+
+#quote {
+  color: white;
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.fadeIn {
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#author {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.733);
+  border-radius: 15px;
+  margin: 20px 20px 20px 20px;
+  font-style: italic;
+  text-align: center;
+  width: 125px;
+  padding: 10px;
+}
+
+#newquote {
+  margin: 20px;
+  position: relative;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  font-weight: 700;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  color: white;
+}
+
+button {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.685);
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(27, 27, 27);
+}
