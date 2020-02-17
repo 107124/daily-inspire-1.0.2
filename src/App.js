@@ -3,12 +3,17 @@ import QuoteAndAuthor from "./QuoteAndAuthor";
 import quotes from "./QuotesDatabase";
 import "./styles.css";
 
+let randomIndex = () => {
+  let startWith = Math.floor(Math.random() * quotes.length);
+  return startWith;
+};
+
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      quote: quotes[0].quote,
-      author: quotes[0].author
+      quote: quotes[randomIndex()].quote,
+      author: quotes[randomIndex()].author
     };
   }
   randomQuote() {
@@ -16,7 +21,7 @@ class App extends React.Component {
     return quotes[randomNumber];
   }
   shuffleQuotes(array) {
-    return array.sort(() => Math.random() - 0.5);
+    return array.sort(() => Math.random() - 1);
   }
 
   // changeImage(category) {
